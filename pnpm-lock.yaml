@@ -9,7 +9,6 @@ specifiers:
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-plugin-eslint': ~5.0.0
   '@vue/cli-service': ~5.0.0
-  bootstrap: ^5.2.3
   core-js: ^3.8.3
   electron: ^13.6.9
   electron-devtools-installer: ^3.1.0
@@ -22,7 +21,6 @@ dependencies:
   '@electron/remote': 2.0.9_electron@13.6.9
   '@popperjs/core': 2.11.6
   '@seald-io/nedb': 4.0.1
-  bootstrap: 5.2.3_@popperjs+core@2.11.6
   core-js: 3.29.1
   vue: 3.2.47
 
@@ -3191,14 +3189,6 @@ packages:
   /boolean/3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
     optional: true
-
-  /bootstrap/5.2.3_@popperjs+core@2.11.6:
-    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
-    peerDependencies:
-      '@popperjs/core': ^2.11.6
-    dependencies:
-      '@popperjs/core': 2.11.6
-    dev: false
 
   /boxen/5.1.2:
     resolution: {integrity: sha512-9gYgQKXx+1nP8mP7CzFyaUARhg7D3n1dF/FnErWmu9l6JvGpNUN278h0aSb+QjoiKSWG+iZ3uHrcqk0qrY9RQQ==}
