@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import OverviewPage from './OverviewPage.vue'
+import TransactionsPage from './TransactionsPage.vue'
+import MainView from './MainView.vue'
 
 // MDI Font
 import '@mdi/font/css/materialdesignicons.css'
@@ -22,7 +25,19 @@ const vuetify = createVuetify({
     }
   },
   ssr: true,
+  theme: {
+    defaultTheme: 'dark'
+  }
 })
 
+const routes = [
+  { path: '/', component: OverviewPage },
+  { path: '/transactions', component: TransactionsPage }
+]
 
-createApp(App).use(vuetify).mount('#app')
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
+})
+
+createApp(MainView).use(vuetify).use(router).mount('#app')
